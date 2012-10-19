@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = TheTvDb::VERSION
   gem.authors       = ["Javier Saldana"]
   gem.email         = ["javier@tractical.com"]
-  gem.description   = %q{TheTvDB.com API Client}
-  gem.summary       = %q{Ruby API Client for TheTvDB.com}
+  gem.description   = %q{Ruby API Client for TheTvDB.com}
+  gem.summary       = %q{TheTvDB.com API Client}
   gem.homepage      = "https://github.com/jassa/the_tv_db"
 
   gem.files         = `git ls-files`.split($/)
