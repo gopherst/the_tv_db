@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["javier@tractical.com"]
   gem.description   = %q{TheTvDB.com API Client}
   gem.summary       = %q{Ruby API Client for TheTvDB.com}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/jassa/the_tv_db"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
