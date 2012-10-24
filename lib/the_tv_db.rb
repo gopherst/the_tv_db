@@ -2,6 +2,7 @@ require "the_tv_db/core_ext/string"
 require "the_tv_db/version"
 require "the_tv_db/errors"
 require "the_tv_db/api"
+require "the_tv_db/model"
 require "the_tv_db/client"
 
 module TheTvDB

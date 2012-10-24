@@ -1,9 +1,9 @@
 module TheTvDB
-  class Series < API
+  class Series < Model
 
     class << self
-      def search(name)
-        data = request("GetSeries.php", { seriesname: name })["Data"]
+      def search(name, lang="en")
+        data = request("GetSeries.php", { seriesname: name, language: lang })["Data"]
         return [] if data.nil?
         
         series = data["Series"]
@@ -19,7 +19,10 @@ module TheTvDB
       end
       
       def find(id)
-        new(request("/data/series/#{id}/all/")["Data"]["Series"])
+        data = request("/data/series/#{id}/all/")["Data"]
+        record = new(data["Series"])
+        record.episodes = data["Episode"]
+        return record
       rescue MultiXml::ParseError
         raise RecordNotFound, "Couldn't find series with ID=#{id}"
       end
@@ -54,9 +57,9 @@ module TheTvDB
       "zap2it_id"      => :zap2it_id
     }.freeze
     
-    attr_accessor *ATTRS_MAP.values
+    attr_accessor *ATTRS_MAP.values, :episodes
 
-    def initialize(params={})
+    def initialize(params=nil)
       params.each do |attr, value|
         begin
           self.public_send("#{ATTRS_MAP[attr]}=", value)
@@ -64,6 +67,20 @@ module TheTvDB
           raise UnknownAttributeError, "unknown attribute: #{attr}"
         end
       end if params
+    end
+    
+    def inspect
+      attributes = ATTRS_MAP.values
+      inspection = if respond_to?(:id)
+         ATTRS_MAP.values.collect { |name|
+           if respond_to?(name)
+             "#{name}: #{attribute_for_inspect(name)}"
+           end
+         }.compact.join(", ")
+       else
+         "not initialized"
+       end
+      "#<#{self.class} #{inspection}>"
     end
     
   end # Series
