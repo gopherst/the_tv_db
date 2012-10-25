@@ -30,53 +30,63 @@ module TheTvDB
     end
     
     ATTRS_MAP = {
-      "id"             => :id,
-      "Actors"         => :actors,
-      "Airs_DayOfWeek" => :airs_day_of_week,
-      "Airs_Time"      => :airs_time,
-      "ContentRating"  => :content_rating,
-      "FirstAired"     => :first_aired,
-      "Genre"          => :genre,
-      "IMDB_ID"        => :imdb_id,
-      "Language"       => :language,
-      "Network"        => :network,
-      "NetworkID"      => :network_id,
-      "Overview"       => :overview,
-      "Rating"         => :rating,
-      "RatingCount"    => :rating_count,
-      "Runtime"        => :runtime,
-      "SeriesID"       => :series_id,
-      "SeriesName"     => :series_name,
-      "Status"         => :status,
-      "added"          => :added,
-      "addedBy"        => :added_by,
-      "banner"         => :banner,
-      "fanart"         => :fanart,
-      "lastupdated"    => :last_updated,
-      "poster"         => :poster,
-      "zap2it_id"      => :zap2it_id
+      :id               => "id",
+      :actors           => "Actors",
+      :added            => "added",
+      :added_by         => "addedBy",
+      :airs_day_of_week => "Airs_DayOfWeek",
+      :airs_time        => "Airs_Time",
+      :banner           => "banner",
+      :content_rating   => "ContentRating",
+      :fanart           => "fanart",
+      :first_aired      => "FirstAired",
+      :genre            => "Genre",
+      :imdb_id          => "IMDB_ID",
+      :language         => "Language",
+      :last_updated     => "lastupdated",
+      :network          => "Network",
+      :network_id       => "NetworkID",
+      :overview         => "Overview",
+      :rating           => "Rating",
+      :rating_count     => "RatingCount",
+      :runtime          => "Runtime",
+      :poster           => "poster",
+      :series_id        => "SeriesID",
+      :series_name      => "SeriesName",
+      :status           => "Status",
+      :zap2it_id        => "zap2it_id"
     }.freeze
     
-    attr_accessor *ATTRS_MAP.values, :episodes
+    attr_accessor *ATTRS_MAP.keys, :episodes
 
     def initialize(params=nil)
+      self.attributes = params
+    end
+    
+    def attributes=(params=nil)
       params.each do |attr, value|
         begin
-          self.public_send("#{ATTRS_MAP[attr]}=", value)
+          self.public_send("#{ATTRS_MAP.key(attr)}=", value)
         rescue NoMethodError
           raise UnknownAttributeError, "unknown attribute: #{attr}"
         end
       end if params
     end
     
+    def attributes
+      attrs = {}
+      ATTRS_MAP.keys.each do |name|
+        attrs[name] = send(name)
+      end
+      attrs
+    end
+    
     def inspect
-      attributes = ATTRS_MAP.values
-      inspection = if respond_to?(:id)
-         ATTRS_MAP.values.collect { |name|
-           if respond_to?(name)
-             "#{name}: #{attribute_for_inspect(name)}"
-           end
-         }.compact.join(", ")
+      attributes = ATTRS_MAP.keys
+      inspection = unless id.nil?
+        ATTRS_MAP.keys.collect { |name|
+          "#{name}: #{attribute_for_inspect(name)}"
+        }.compact.join(", ")
        else
          "not initialized"
        end

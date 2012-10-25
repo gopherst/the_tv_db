@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+<Series>
+<id>82066</id>
+<Actors>
+|Anna Torv|Joshua Jackson|John Noble|Jasika Nicole|Blair Brown|Mark Valley|Kirk Acevedo|Seth Gabel|Lance Reddick|Georgina Haig|
+</Actors>
+<Airs_DayOfWeek>Friday</Airs_DayOfWeek>
+<Airs_Time>9:00 PM</Airs_Time>
+<ContentRating>TV-14</ContentRating>
+<FirstAired>2008-08-26</FirstAired>
+<Genre>|Drama|Science-Fiction|</Genre>
+<IMDB_ID>tt1119644</IMDB_ID>
+<Language>en</Language>
+<Network>FOX</Network>
+<NetworkID/>
+<Overview>
+The series follows a Federal Bureau of Investigation "Fringe Division" team based in Boston. The team uses unorthodox "fringe" science and FBI investigative techniques to investigate a series of unexplained, often ghastly occurrences, some of which are related to mysteries surrounding a parallel universe.
+</Overview>
+<Rating>8.7</Rating>
+<RatingCount>571</RatingCount>
+<Runtime>60</Runtime>
+<SeriesID>75146</SeriesID>
+<SeriesName>Fringe</SeriesName>
+<Status>Continuing</Status>
+<added/>
+<addedBy/>
+<banner>graphical/82066-g38.jpg</banner>
+<fanart>fanart/original/82066-78.jpg</fanart>
+<lastupdated>1351122606</lastupdated>
+<poster>posters/82066-53.jpg</poster>
+<zap2it_id>SH01059103</zap2it_id>
+</Series>
+<Episode>
+<id>694851</id>
+<Combined_episodenumber>1</Combined_episodenumber>
+<Combined_season>0</Combined_season>
+<DVD_chapter/>
+<DVD_discid/>
+<DVD_episodenumber/>
+<DVD_season/>
+<Director/>
+<EpImgFlag>1</EpImgFlag>
+<EpisodeName>Unaired Pilot</EpisodeName>
+<EpisodeNumber>1</EpisodeNumber>
+<FirstAired/>
+<GuestStars/>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview/>
+<ProductionCode/>
+<Rating/>
+<RatingCount>0</RatingCount>
+<SeasonNumber>0</SeasonNumber>
+<Writer/>
+<absolute_number/>
+<airsafter_season/>
+<airsbefore_episode>1</airsbefore_episode>
+<airsbefore_season>1</airsbefore_season>
+<filename>episodes/82066/694851.jpg</filename>
+<lastupdated>1263338464</lastupdated>
+<seasonid>32605</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>1148751</id>
+<Combined_episodenumber>2</Combined_episodenumber>
+<Combined_season>0</Combined_season>
+<DVD_chapter/>
+<DVD_discid/>
+<DVD_episodenumber/>
+<DVD_season/>
+<Director/>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Access All Areas</EpisodeName>
+<EpisodeNumber>2</EpisodeNumber>
+<FirstAired>2009-10-05</FirstAired>
+<GuestStars/>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview/>
+<ProductionCode/>
+<Rating>7.4</Rating>
+<RatingCount>5</RatingCount>
+<SeasonNumber>0</SeasonNumber>
+<Writer/>
+<absolute_number/>
+<airsafter_season/>
+<airsbefore_episode>4</airsbefore_episode>
+<airsbefore_season>2</airsbefore_season>
+<filename>episodes/82066/1148751.jpg</filename>
+<lastupdated>1261238171</lastupdated>
+<seasonid>32605</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>4169544</id>
+<Combined_episodenumber>3</Combined_episodenumber>
+<Combined_season>0</Combined_season>
+<DVD_chapter/>
+<DVD_discid/>
+<DVD_episodenumber/>
+<DVD_season/>
+<Director/>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Past + Present + Future</EpisodeName>
+<EpisodeNumber>3</EpisodeNumber>
+<FirstAired/>
+<GuestStars/>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview/>
+<ProductionCode/>
+<Rating>7.0</Rating>
+<RatingCount>1</RatingCount>
+<SeasonNumber>0</SeasonNumber>
+<Writer/>
+<absolute_number/>
+<airsafter_season/>
+<airsbefore_episode>1</airsbefore_episode>
+<airsbefore_season>4</airsbefore_season>
+<filename>episodes/82066/4169544.jpg</filename>
+<lastupdated>1316636030</lastupdated>
+<seasonid>32605</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>367882</id>
+<Combined_episodenumber>1.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>1</DVD_discid>
+<DVD_episodenumber>1.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Alex Graves</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Pilot</EpisodeName>
+<EpisodeNumber>1</EpisodeNumber>
+<FirstAired>2008-09-09</FirstAired>
+<GuestStars>
+Quinn Martin|Peter Outerbridge|Omar Habib|Rick Parker|Chris Britton|Tauqir Shah|Andrew Hinkson|Kelly King|Frank D'Andrea|Jason Butler Harner|Lee Jay Gladman|Dennis Mockler|Bernadeta Wrobel
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+When all the passengers on a plane die, FBI agent Olivia Dunham investigates the events and her partner almost dies. A desperate Olivia looks for help from Dr. Walter Bishop who has been institutionalized. Olivia, Dr. Bishop and his son Peter begin to discover what really happened on Flight 627 and begin to uncover a larger truth.
+</Overview>
+<ProductionCode>276038</ProductionCode>
+<Rating>7.9</Rating>
+<RatingCount>212</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>J.J. Abrams|Roberto Orci|Alex Kurtzman</Writer>
+<absolute_number/>
+<filename>episodes/82066/367882.jpg</filename>
+<lastupdated>1326190149</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>386103</id>
+<Combined_episodenumber>2.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>1</DVD_discid>
+<DVD_episodenumber>2.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Paul Edwards</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>The Same Old Story</EpisodeName>
+<EpisodeNumber>2</EpisodeNumber>
+<FirstAired>2008-09-16</FirstAired>
+<GuestStars>Betty Gilpin|Mark Blum|Derek Cecil</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+Olivia, along with Peter and Walter Bishop, investigates the strange death of a woman who had an even stranger child. The woman was pregnant for only hours, yet the baby she birthed was fully developed - and also aged eighty years in the span of a few minutes. Olivia asks Nina Sharp of Massive Dynamic for help.
+</Overview>
+<ProductionCode>3T7651</ProductionCode>
+<Rating>7.5</Rating>
+<RatingCount>191</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Jeff Pinkner|J.J. Abrams|Roberto Orci</Writer>
+<absolute_number/>
+<filename>episodes/82066/386103.jpg</filename>
+<lastupdated>1326190166</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>386717</id>
+<Combined_episodenumber>3.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>1</DVD_discid>
+<DVD_episodenumber>3.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Alex Graves</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>The Ghost Network</EpisodeName>
+<EpisodeNumber>3</EpisodeNumber>
+<FirstAired>2008-09-23</FirstAired>
+<GuestStars>
+Zak Orth|Peter Hermann|David Lansbury|Donnie Keshawarz|Brian Tarantina
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+The team investigates a bus full of dead commuters that appear to be fossilized and uncover a man who has visions of pattern-related disturbances before they happen; Dr. Bishop requests a piano in the lab to help him process data.
+</Overview>
+<ProductionCode>3T7652</ProductionCode>
+<Rating>7.5</Rating>
+<RatingCount>175</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>J.J. Abrams|Roberto Orci|Alex Kurtzman</Writer>
+<absolute_number/>
+<filename>episodes/82066/386717.jpg</filename>
+<lastupdated>1326190187</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>387578</id>
+<Combined_episodenumber>4.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>1</DVD_discid>
+<DVD_episodenumber>4.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Paul Edwards</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>The Arrival</EpisodeName>
+<EpisodeNumber>4</EpisodeNumber>
+<FirstAired>2008-09-30</FirstAired>
+<GuestStars>|Nestor Serrano|Michael Kelly|Michael Cerveris|</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+Broyles calls in the team to investigate a deadly explosion and its source: a strange cylinder unharmed despite the destruction. Olivia determines that the same cylinder, or a similar one, is responsible for similar events in widely diverse locations.
+</Overview>
+<ProductionCode>3T7653</ProductionCode>
+<Rating>7.5</Rating>
+<RatingCount>162</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Jeff Pinkner|J. J. Abrams</Writer>
+<absolute_number/>
+<filename>episodes/82066/387578.jpg</filename>
+<lastupdated>1326190200</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>391049</id>
+<Combined_episodenumber>5.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>2</DVD_discid>
+<DVD_episodenumber>5.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Christopher Misiano</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Power Hungry</EpisodeName>
+<EpisodeNumber>5</EpisodeNumber>
+<FirstAired>2008-10-14</FirstAired>
+<GuestStars>
+|Ebon Moss-Bachrach|Max Baker|Marylouise Burke|Diane Davis|
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+The team investigate the case of a man who can project electricity... and is at the center of a series of strange deaths involving electricity.
+</Overview>
+<ProductionCode>3T7654</ProductionCode>
+<Rating>7.3</Rating>
+<RatingCount>164</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Jason Cahill|Julia Cho</Writer>
+<absolute_number/>
+<filename>episodes/82066/391049.jpg</filename>
+<lastupdated>1326190216</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>393881</id>
+<Combined_episodenumber>6.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>2</DVD_discid>
+<DVD_episodenumber>6.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Bill Eagles</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>The Cure</EpisodeName>
+<EpisodeNumber>6</EpisodeNumber>
+<FirstAired>2008-10-21</FirstAired>
+<GuestStars>
+|Chris Eigemann|Marjan Neshat|Alok Tewari|Maria Dizzia|Robert Eli|Lisa Emery|William Hill|
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+The team investigates a woman that re-appears after weeks of being missing with a rare disease. She also inexplicably causes pain and death to the people she meets. During the investigation, dangerous level of radiation are detected. Walter obsesses about cotton candy; Peter strikes a deal with Nina Sharp; and a truth about Olivia is discovered.
+</Overview>
+<ProductionCode>3T7655</ProductionCode>
+<Rating>7.4</Rating>
+<RatingCount>163</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Felicia D. Henderson|Brad Caleb Kane</Writer>
+<absolute_number/>
+<filename>episodes/82066/393881.jpg</filename>
+<lastupdated>1326190249</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>399476</id>
+<Combined_episodenumber>7.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>2</DVD_discid>
+<DVD_episodenumber>7.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Brad Anderson</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>In Which We Meet Mr. Jones</EpisodeName>
+<EpisodeNumber>7</EpisodeNumber>
+<FirstAired>2008-11-11</FirstAired>
+<GuestStars>
+|Billy Burke|Jared Harris|Kenneth Tigar|Chance Kelly|Trini Alvarado|John Boyd|
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+When a strange parasite attaches itself to the internal organs of a dying FBI agent, Olivia suspects a connection to the Pattern; Peter and Walter tap into a dead man's brain waves.
+</Overview>
+<ProductionCode>3T7656</ProductionCode>
+<Rating>7.5</Rating>
+<RatingCount>162</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Jeff Pinkner|J. J. Abrams</Writer>
+<absolute_number/>
+<filename>episodes/82066/399476.jpg</filename>
+<lastupdated>1326190265</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>402433</id>
+<Combined_episodenumber>8.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>2</DVD_discid>
+<DVD_episodenumber>8.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Gwyneth Horder-Payton</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>The Equation</EpisodeName>
+<EpisodeNumber>8</EpisodeNumber>
+<FirstAired>2008-11-18</FirstAired>
+<GuestStars>
+|Charlie Tahan|Randall Duk Kim|Gillian Jacobs|Bill Sadler|
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+Walter thinks the abduction of a young music prodigy is linked back to his old bunkmate at St. Claire's Hospital. When he kidnaps the child he see's a sequence of flashing lights. Olivia wants Walter to return to the mental institution much to Peter's outcry, but Walter's determination to help ends up having chilling ramifications.
+</Overview>
+<ProductionCode>3T7657</ProductionCode>
+<Rating>7.6</Rating>
+<RatingCount>157</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>|David H. Goodman|J.R. Orci|</Writer>
+<absolute_number/>
+<filename>episodes/82066/402433.jpg</filename>
+<lastupdated>1326190278</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>402434</id>
+<Combined_episodenumber>9.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>3</DVD_discid>
+<DVD_episodenumber>9.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Frederick E. O. Toye</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>The Dreamscape</EpisodeName>
+<EpisodeNumber>9</EpisodeNumber>
+<FirstAired>2008-11-25</FirstAired>
+<GuestStars>
+|Ptolemy Slocum|Yul Vazquez|David Vadim|Susie Misner|Tom Riis Farrell|
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+The team is called in to investigate why a man jumps out a window because he thinks he's being attacked by butterflies. Olivia gets some breaks in solving the case from her former partner and that she is so desperate to rid herself of him that she demands to go back into the tank. Meanwhile, some former friends and current foes of Peter find out that he's back in Boston.
+</Overview>
+<ProductionCode>3T7658</ProductionCode>
+<Rating>7.5</Rating>
+<RatingCount>158</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Julia Cho|Zack Whedon</Writer>
+<absolute_number/>
+<filename>episodes/82066/402434.jpg</filename>
+<lastupdated>1326190290</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>408746</id>
+<Combined_episodenumber>10.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>3</DVD_discid>
+<DVD_episodenumber>10.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Frederick E. O. Toye</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Safe</EpisodeName>
+<EpisodeNumber>10</EpisodeNumber>
+<FirstAired>2008-12-02</FirstAired>
+<GuestStars>
+Jared Harris|Paul Fitzgerald|Chance Kelly|James Frain
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+The team is called in on a bank robbery similar to other robberies in the area but this particular bank has the thief embedded inside the steel wall of the bank. Somehow the thieves have found a way to defy the law of physics. Walter thinks they're after something of his. As the investigation deepens it all comes to a head when the thieves ambush one of the team.
+</Overview>
+<ProductionCode>3T7659</ProductionCode>
+<Rating>7.8</Rating>
+<RatingCount>163</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Julia Cho|Zack Whedon</Writer>
+<absolute_number/>
+<filename>episodes/82066/408746.jpg</filename>
+<lastupdated>1326190302</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>412091</id>
+<Combined_episodenumber>11.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>3</DVD_discid>
+<DVD_episodenumber>11.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Frederick E. O. Toye</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Bound</EpisodeName>
+<EpisodeNumber>11</EpisodeNumber>
+<FirstAired>2009-01-20</FirstAired>
+<GuestStars>
+|Ari Graynor|Chance Kelly|Jared Harris|Michael Gaston|Lily Pilblad|Sara Wilson|Stephen Schnetzer|Peter Jay Fernandez|
+</GuestStars>
+<IMDB_ID>tt1248539</IMDB_ID>
+<Language>en</Language>
+<Overview>
+Olivia's sister, Rachel (Ari Graynor), visits; Walter, Peter and Olivia try to solve the murder of an esteemed epidemiologist, which may be linked to Olivia's abduction.
+</Overview>
+<ProductionCode>3T7660</ProductionCode>
+<Rating>7.6</Rating>
+<RatingCount>159</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>
+J. J. Abrams|Jeff Pinkner|Roberto Orci|Alex Kurtzman
+</Writer>
+<absolute_number/>
+<filename>episodes/82066/412091.jpg</filename>
+<lastupdated>1326190315</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>420373</id>
+<Combined_episodenumber>12.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>3</DVD_discid>
+<DVD_episodenumber>12.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>John Polson</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>No Brainer</EpisodeName>
+<EpisodeNumber>12</EpisodeNumber>
+<FirstAired>2009-01-27</FirstAired>
+<GuestStars>
+Chris Bauer|Noah Fleiss|Mary Beth Peil|Gbenga Akinagbe|Mark Lotito|Susan Knight|Jake O’Connor|Randy Kovitz as Mark
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+Olivia, Walter and Peter are called in to investigate the death of a car salesman who was found in a pool of "goo," exactly like another man across the country. When Walter discovers that the "goo" is brain matter, the trio tries to figure out how the killer can liquefy human brains. As the deaths pile up, the investigation reveals a common thread linking the victims together in an unthinkable manner. Meanwhile, Olivia is horrified when the case places a loved one in harm's way
+</Overview>
+<ProductionCode>3T7661</ProductionCode>
+<Rating>7.1</Rating>
+<RatingCount>155</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Brad Caleb Kane|David H. Goodman</Writer>
+<absolute_number/>
+<filename>episodes/82066/420373.jpg</filename>
+<lastupdated>1326190327</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>420374</id>
+<Combined_episodenumber>13.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>4</DVD_discid>
+<DVD_episodenumber>13.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Brad Anderson</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>The Transformation</EpisodeName>
+<EpisodeNumber>13</EpisodeNumber>
+<FirstAired>2009-02-03</FirstAired>
+<GuestStars>
+|Felix Solis|Neal Huff|Armando Riesco|Darby Totten|Ash Roeca|Guisseppe Jones|Al Sapienza|Chris Lapanta|Dina Comolli|
+</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+When the Fringe Division delves into another bizarre occurrence aboard an international jumbo jet, freakish remains are discovered at the crash site. Memories tip the team toward some promising leads, but the bigger picture and mysterious threat eludes them. With limited options and insufficient intelligence, Olivia and Peter go undercover.
+</Overview>
+<ProductionCode>3T7662</ProductionCode>
+<Rating>7.5</Rating>
+<RatingCount>156</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Zack Whedon|J. R. Orci</Writer>
+<absolute_number/>
+<filename>episodes/82066/420374.jpg</filename>
+<lastupdated>1326190339</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>422561</id>
+<Combined_episodenumber>14.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>4</DVD_discid>
+<DVD_episodenumber>14.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Norberto Barba</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Ability</EpisodeName>
+<EpisodeNumber>14</EpisodeNumber>
+<FirstAired>2009-02-10</FirstAired>
+<GuestStars/>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+German agents question Olivia about her “relationship” with David Robert Jones, an escaped prisoner questioned months earlier now living in the U.S. The Fringe Division investigates a threatening case where victims die faceless from their orifices suddenly sealing.
+</Overview>
+<ProductionCode>3T7663</ProductionCode>
+<Rating>7.8</Rating>
+<RatingCount>156</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Robert Chiappetta|Glen Whitman</Writer>
+<absolute_number/>
+<filename>episodes/82066/422561.jpg</filename>
+<lastupdated>1326190351</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>437727</id>
+<Combined_episodenumber>15.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>4</DVD_discid>
+<DVD_episodenumber>15.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Frederick E. O. Toye</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Inner Child</EpisodeName>
+<EpisodeNumber>15</EpisodeNumber>
+<FirstAired>2009-04-07</FirstAired>
+<GuestStars>|Spencer List|Jeremy Shamos|</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+Just seconds before a building is demolished, a mysterious mute child that has been living alone underground is discovered. When the FBI’s Fringe Division investigates, the boy forms an unspoken connection with Agent Olivia Dunham. Meanwhile, an especially gruesome serial killer resurfaces and showcases his “artistry” by displaying his work publicly. As the boy gradually assimilates into a new environment, Olivia and the team must race against the clock to prevent the mad man from causing further massacre.
+</Overview>
+<ProductionCode>3T7664</ProductionCode>
+<Rating>7.5</Rating>
+<RatingCount>165</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Julia Cho|Brad Caleb Kane</Writer>
+<absolute_number/>
+<filename>episodes/82066/437727.jpg</filename>
+<lastupdated>1326190364</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>444943</id>
+<Combined_episodenumber>16.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>4</DVD_discid>
+<DVD_episodenumber>16.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Brad Anderson</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Unleashed</EpisodeName>
+<EpisodeNumber>16</EpisodeNumber>
+<FirstAired>2009-04-14</FirstAired>
+<GuestStars/>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+As animal rights activists ransack a laboratory, they get more than they bargained for when one of the caged “animals” unleashes a ferocious appetite. Leaving grotesquely mutilated dead bodies in its wake, the scientifically engineered beast with the body of a lion, claws of an eagle, fangs of a viper, skin of a rhinoceros and tail of a serpent attacks Charlie. With Charlie’s life on the line, Walter must come face-to-face with both his past and the beast.
+</Overview>
+<ProductionCode>3T7665</ProductionCode>
+<Rating>7.2</Rating>
+<RatingCount>162</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Zack Whedon|J. R. Orci</Writer>
+<absolute_number/>
+<filename>episodes/82066/444943.jpg</filename>
+<lastupdated>1326190377</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>444944</id>
+<Combined_episodenumber>17.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>5</DVD_discid>
+<DVD_episodenumber>17.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Akiva Goldsman</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Bad Dreams</EpisodeName>
+<EpisodeNumber>17</EpisodeNumber>
+<FirstAired>2009-04-21</FirstAired>
+<GuestStars>|Leonard Nimoy|</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+Olivia dreams about a suicide as the event really happens at Grand Central Station; shocking information about the Z.F.T. manuscript is revealed.
+</Overview>
+<ProductionCode>3T7666</ProductionCode>
+<Rating>7.7</Rating>
+<RatingCount>156</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Akiva Goldsman</Writer>
+<absolute_number/>
+<filename>episodes/82066/444944.jpg</filename>
+<lastupdated>1326190387</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>444945</id>
+<Combined_episodenumber>18.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>5</DVD_discid>
+<DVD_episodenumber>18.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Bobby Roth</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>Midnight</EpisodeName>
+<EpisodeNumber>18</EpisodeNumber>
+<FirstAired>2009-04-28</FirstAired>
+<GuestStars>Jefferson Mays</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+The Fringe Division is on the case when severely mutilated bodies drained of spinal cord fluid begin to pile up. After their investigation leads them to a scientist (guest star Jefferson Mays) with possible ties to the Z.F.T. bioterrorist cell, they are shocked to discover the identity and motive of the killer. When the kills occur with increasing frequency, Olivia, Peter and Walter go to desperate lengths to stop them.
+</Overview>
+<ProductionCode/>
+<Rating>7.7</Rating>
+<RatingCount>148</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Andrew Kreisberg|J. H. Wyman</Writer>
+<absolute_number/>
+<filename>episodes/82066/444945.jpg</filename>
+<lastupdated>1326190397</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>444946</id>
+<Combined_episodenumber>19.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>5</DVD_discid>
+<DVD_episodenumber>19.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Frederick E. O. Toye</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>The Road Not Taken</EpisodeName>
+<EpisodeNumber>19</EpisodeNumber>
+<FirstAired>2009-05-05</FirstAired>
+<GuestStars/>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+Olivia experiences "awake dreams," seeing elaborate visions of things not really there. While investigating a disturbing case of a woman who apparently spontaneously combusted, Olivia throws caution to the wind and explores her unexplained visions further. Meanwhile, Walter discusses key information about the Z.F.T. manifesto, and Peter reveals a secret that yields unexpected results in the case.
+</Overview>
+<ProductionCode/>
+<Rating>7.7</Rating>
+<RatingCount>148</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Jeff Pinkner|J.R. Orci|Akiva Goldsman</Writer>
+<absolute_number/>
+<filename>episodes/82066/444946.jpg</filename>
+<lastupdated>1326190409</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+<Episode>
+<id>497841</id>
+<Combined_episodenumber>20.0</Combined_episodenumber>
+<Combined_season>1</Combined_season>
+<DVD_chapter/>
+<DVD_discid>5</DVD_discid>
+<DVD_episodenumber>20.0</DVD_episodenumber>
+<DVD_season>1</DVD_season>
+<Director>Brad Anderson</Director>
+<EpImgFlag>2</EpImgFlag>
+<EpisodeName>There's More Than One of Everything</EpisodeName>
+<EpisodeNumber>20</EpisodeNumber>
+<FirstAired>2009-05-12</FirstAired>
+<GuestStars>|Leonard Nimoy|Jared Harris|</GuestStars>
+<IMDB_ID/>
+<Language>en</Language>
+<Overview>
+Setting the stage for the dramatic and revealing first season finale are a sudden and unexpected attack on someone with close ties to Fringe Division, the return of bioterrorist David Robert Jones and the inexplicable disappearance of Walter. Find out more about the mysterious events surrounding our trio when questions are answered, observations made, loyalties are tested and the elusive William Bell is finally introduced.
+</Overview>
+<ProductionCode/>
+<Rating>8.1</Rating>
+<RatingCount>156</RatingCount>
+<SeasonNumber>1</SeasonNumber>
+<Writer>Jeff Pinkner|J.H. Wyman|Akiva Goldsman</Writer>
+<absolute_number/>
+<filename>episodes/82066/497841.jpg</filename>
+<lastupdated>1326190422</lastupdated>
+<seasonid>32606</seasonid>
+<seriesid>82066</seriesid>
+</Episode>
+</Data>

@@ -17,7 +17,11 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
   
-  gem.add_dependency "ox", "~> 1.6.3"
-  gem.add_dependency "faraday", "~> 0.8.4"
+  gem.add_dependency "typhoeus",  "~> 0.4.2"
+  gem.add_dependency "faraday",   "~> 0.8.4"
+  gem.add_dependency "ox",        "~> 1.6.3"
   gem.add_dependency "multi_xml", "~> 0.5.1"
+  
+  gem.add_development_dependency "rspec", "~> 2.11.0"
+  gem.add_development_dependency "webmock", "~> 1.8.11"
 end
