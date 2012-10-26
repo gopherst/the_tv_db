@@ -9,7 +9,7 @@ module TheTvDB
     @connection = nil
     
     def connection
-      @connection ||= Faraday.new(:url => TheTvDB.endpoint) do |faraday|
+      @connection ||= Faraday.new(:url => TheTvDB::ENDPOINT) do |faraday|
         faraday.response :logger if ENV['DEBUG'] # log requests to STDOUT
         faraday.adapter  :typhoeus # make requests with Typhoeus
         faraday.use      TheTvDB::Response::Xmlize

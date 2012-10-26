@@ -1,5 +1,45 @@
 module TheTvDB
-  class Episode
+  class Episode < Model
+    
+    class << self
+      
+      # Public: Find an episode by air date.
+      #
+      # This is useful for shows that don't contain season and episode info, 
+      # but rather have the date in the title.
+      #
+      # series_id  - The ID of the series.
+      # air_date   - The air date of the episode.
+      # lang       - The language of the episode.
+      #
+      # Examples
+      #
+      #    search("82066", "2012-11-16")
+      #    search("82066", "11/16/2012", "fr")
+      #
+      # Returns TheTvDB::Episode object
+      def search(series_id, air_date=nil, lang="en")
+        data = request("GetEpisodeByAirDate.php", { 
+          apikey:   TheTvDB.api_key,
+          seriesid: series_id,
+          airdate:  air_date,
+          language: lang
+        })["Data"]
+        
+        raise TheTvDBError, data["Error"] if data["Error"]
+        
+        episodes = data["Episode"]
+        
+        case episodes
+        when Hash
+          [ new(episodes) ]
+        when Array
+          episodes.collect { |episode| new(episode) }
+        else
+          []
+        end
+      end
+    end
     
     ATTRS_MAP = {
       :id                      => "id",
@@ -15,8 +55,8 @@ module TheTvDB
       :dvd_episode_number      => "DVD_episodenumber",
       :dvd_season              => "DVD_season",
       :ep_img_flag             => "EpImgFlag",
-      :episode_name            => "EpisodeName",
-      :episode_number          => "EpisodeNumber",
+      :name                    => "EpisodeName",
+      :number                  => "EpisodeNumber",
       :filename                => "filename",
       :first_aired             => "FirstAired",
       :guest_stars             => "GuestStars",
@@ -29,8 +69,8 @@ module TheTvDB
       :rating_count            => "RatingCount",
       :season_id               => "seasonid",
       :season_number           => "SeasonNumber",
-      :series_id               => "seriesid"
-      :writer                  => "Writer",
+      :series_id               => "seriesid",
+      :writer                  => "Writer"
     }.freeze
     
     attr_accessor *ATTRS_MAP.keys

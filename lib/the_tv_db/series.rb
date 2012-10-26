@@ -63,6 +63,17 @@ module TheTvDB
       self.attributes = params
     end
     
+    def episodes=(episodes)
+      @episodes = case episodes
+      when Hash
+        [ Episode.new(episodes) ]
+      when Array
+        episodes.collect { |episode| Episode.new(episode) }
+      else
+        []
+      end
+    end
+    
     def attributes=(params=nil)
       params.each do |attr, value|
         begin

@@ -6,17 +6,17 @@ require "the_tv_db/model"
 require "the_tv_db/client"
 
 module TheTvDB
+  
+  SITE     = "http://thetvdb.com".freeze
+  ENDPOINT = "http://thetvdb.com/api".freeze
+  
   class << self
-    
-    attr_accessor :site, :endpoint
-    
-    @site = "http://thetvdb.com".freeze
-    @endpoint = "http://thetvdb.com/api".freeze
-    
+        
     # Handle for the client instance
-    attr_accessor :api_client
+    attr_accessor :api_client, :api_key
   
     def new(options={}, &block)
+      @api_key = options.delete(:api_key)
       @api_client = TheTvDB::Client.new(options, &block)
     end
     
