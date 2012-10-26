@@ -1,5 +1,6 @@
 module TheTvDB
-  class Series < Model
+  class Series < API
+    include Model
 
     class << self
       def search(name, lang="en")
@@ -58,10 +59,6 @@ module TheTvDB
     }.freeze
     
     attr_accessor *ATTRS_MAP.keys, :episodes
-
-    def initialize(params=nil)
-      self.attributes = params
-    end
     
     def episodes=(episodes)
       @episodes = case episodes
@@ -72,36 +69,6 @@ module TheTvDB
       else
         []
       end
-    end
-    
-    def attributes=(params=nil)
-      params.each do |attr, value|
-        begin
-          self.public_send("#{ATTRS_MAP.key(attr)}=", value)
-        rescue NoMethodError
-          raise UnknownAttributeError, "unknown attribute: #{attr}"
-        end
-      end if params
-    end
-    
-    def attributes
-      attrs = {}
-      ATTRS_MAP.keys.each do |name|
-        attrs[name] = send(name)
-      end
-      attrs
-    end
-    
-    def inspect
-      attributes = ATTRS_MAP.keys
-      inspection = unless id.nil?
-        ATTRS_MAP.keys.collect { |name|
-          "#{name}: #{attribute_for_inspect(name)}"
-        }.compact.join(", ")
-       else
-         "not initialized"
-       end
-      "#<#{self.class} #{inspection}>"
     end
     
   end # Series
