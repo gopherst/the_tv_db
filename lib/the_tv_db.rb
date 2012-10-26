@@ -8,6 +8,11 @@ require "the_tv_db/client"
 module TheTvDB
   class << self
     
+    attr_accessor :site, :endpoint
+    
+    @site = "http://thetvdb.com".freeze
+    @endpoint = "http://thetvdb.com/api".freeze
+    
     # Handle for the client instance
     attr_accessor :api_client
   

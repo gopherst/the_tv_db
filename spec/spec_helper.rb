@@ -26,3 +26,7 @@ end
 def fixture(file)
   File.read(File.join(fixture_path, '/', file))
 end
+
+def stub_get(path, endpoint = TheTvDB.endpoint.to_s)
+  stub_request(:get, endpoint + path)
+end
