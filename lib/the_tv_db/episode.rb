@@ -14,11 +14,11 @@ module TheTvDB
       #
       # Examples
       #
-      #    search("82066", "2012-11-16")
-      #    search("82066", "11/16/2012", "fr")
+      #    find("82066", "2012-11-16")
+      #    find("82066", "11/16/2012", "fr")
       #
-      # Returns TheTvDB::Episode object
-      def search(series_id, air_date=nil, lang="en")
+      # Returns array of TheTvDB::Episode objects.
+      def find(series_id, air_date=nil, lang="en")
         data = request("GetEpisodeByAirDate.php", { 
           apikey:   TheTvDB.api_key,
           seriesid: series_id,
@@ -39,6 +39,7 @@ module TheTvDB
           []
         end
       end
+      alias :get :find
     end
     
     ATTRS_MAP = {

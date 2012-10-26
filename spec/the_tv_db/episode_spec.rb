@@ -3,12 +3,12 @@ require "spec_helper"
 describe TheTvDB::Episode do
   let(:api) { TheTvDB.new(api_key: "ASDF01234F0AF1368") }
   
-  context ".search" do
+  context ".find" do
     it "returns an episode obejct" do      
       stub_get("GetEpisodeByAirDate.php?airdate=2012-11-16&apikey=ASDF01234F0AF1368&language=en&seriesid=82066").
         to_return(:status => 200, :body => fixture("episodes/result.xml"))
 
-      episodes = api.episodes.search("82066", "2012-11-16")
+      episodes = api.episodes.find("82066", "2012-11-16")
       episodes.count.should == 1
     end
     
@@ -17,7 +17,7 @@ describe TheTvDB::Episode do
         to_return(:status => 200, :body => fixture("episodes/air_date.xml"))
 
       expect {
-        api.episodes.search("82066")
+        api.episodes.find("82066")
       }.to raise_error(TheTvDB::TheTvDBError)
     end
     
@@ -27,7 +27,7 @@ describe TheTvDB::Episode do
 
       TheTvDB.stub(:api_key).and_return(nil)
       expect {
-        api.episodes.search("82066", "2012-11-16")
+        api.episodes.find("82066", "2012-11-16")
       }.to raise_error(TheTvDB::TheTvDBError)
     end 
   end
