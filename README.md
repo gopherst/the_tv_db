@@ -1,4 +1,4 @@
-# TheTvDB
+# TheTvDB [![Build Status](https://travis-ci.org/jassa/the_tv_db.png)](https://travis-ci.org/jassa/the_tv_db)
 
 Ruby API Client for TheTvDB.com
 
