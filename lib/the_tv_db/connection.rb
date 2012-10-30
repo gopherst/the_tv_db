@@ -1,5 +1,6 @@
 require "faraday"
 require "the_tv_db/response"
+require "the_tv_db/response/unzip"
 require "the_tv_db/response/xmlize"
 
 module TheTvDB
@@ -13,6 +14,7 @@ module TheTvDB
         faraday.response :logger if ENV['DEBUG'] # log requests to STDOUT
         faraday.adapter  :typhoeus # make requests with Typhoeus
         faraday.use      TheTvDB::Response::Xmlize
+        faraday.use      TheTvDB::Response::Unzip
       end
     end
     

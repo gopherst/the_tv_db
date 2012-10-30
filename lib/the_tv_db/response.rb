@@ -7,7 +7,7 @@ module TheTvDB
     class << self
       attr_accessor :parser
     end
-
+    
     def self.define_parser(&block)
       @parser = block
     end
@@ -19,6 +19,6 @@ module TheTvDB
     def parse_response?(env)
       env[:body].respond_to? :to_str
     end
-
+    
   end # Response
 end # TheTvDB

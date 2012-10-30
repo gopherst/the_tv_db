@@ -19,10 +19,20 @@ module TheTvDB
         end
       end
       
-      def find(id)
-        data = request("/data/series/#{id}/all/")["Data"]
-        record = new(data["Series"])
-        record.episodes = data["Episode"]
+      def find(id, lang="en")
+        if TheTvDB.api_key
+          files = request("#{TheTvDB.api_key}/series/#{id}/all/#{lang}.zip")
+          data = files["#{lang}.xml"].fetch("Data")
+          record = new(data["Series"])
+          record.episodes = data["Episode"]
+          record.banners = files["banners.xml"]["Banners"]["Banner"]
+          record.actors = files["actors.xml"]["Actors"]["Actor"]
+        else
+          data = request("/data/series/#{id}/all/").fetch("Data")
+          record = new(data["Series"])
+          record.episodes = data["Episode"]
+        end
+        
         return record
       rescue MultiXml::ParseError
         raise RecordNotFound, "Couldn't find series with ID=#{id}"
@@ -58,7 +68,7 @@ module TheTvDB
       :zap2it_id        => "zap2it_id"
     }.freeze
     
-    attr_accessor *ATTRS_MAP.keys, :episodes
+    attr_accessor *ATTRS_MAP.keys, :episodes, :banners, :actors
     
     def episodes=(episodes)
       @episodes = case episodes
