@@ -13,7 +13,7 @@ module TheTvDB
     def connection
       @connection ||= Faraday.new(:url => TheTvDB::ENDPOINT) do |faraday|
         faraday.response :logger if ENV['DEBUG'] # log requests to STDOUT
-        faraday.adapter  :typhoeus # make requests with Typhoeus
+        faraday.adapter  :net_http # make requests with NetHTTP
         faraday.use      TheTvDB::Response::Xmlize
         faraday.use      TheTvDB::Response::Unzip
         faraday.use      TheTvDB::Response::RaiseError
