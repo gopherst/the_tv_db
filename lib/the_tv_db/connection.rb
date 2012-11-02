@@ -2,6 +2,7 @@ require "faraday"
 require "the_tv_db/response"
 require "the_tv_db/response/unzip"
 require "the_tv_db/response/xmlize"
+require "the_tv_db/response/raise_error"
 
 module TheTvDB
   module Connection
@@ -15,6 +16,7 @@ module TheTvDB
         faraday.adapter  :typhoeus # make requests with Typhoeus
         faraday.use      TheTvDB::Response::Xmlize
         faraday.use      TheTvDB::Response::Unzip
+        faraday.use      TheTvDB::Response::RaiseError
       end
     end
     

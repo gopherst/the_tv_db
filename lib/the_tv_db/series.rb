@@ -34,8 +34,6 @@ module TheTvDB
         end
         
         return record
-      rescue MultiXml::ParseError
-        raise RecordNotFound, "Couldn't find series with ID=#{id}"
       end
       alias :get :find
     end
