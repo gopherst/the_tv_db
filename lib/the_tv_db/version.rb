@@ -1,3 +1,3 @@
-module TheTvDb
-  VERSION = "0.0.3"
+module TheTvDB
+  VERSION = "0.0.4"
 end
