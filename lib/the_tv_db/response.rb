@@ -1,3 +1,5 @@
+# -*- encoding: utf-8 -*-
+
 module TheTvDB
   # Contains methods and attributes that act on the response returned from the 
   # request
@@ -18,7 +20,7 @@ module TheTvDB
 
     def parse_response?(env)
       env[:body].respond_to? :to_str
-    end
+    end    
     
   end # Response
 end # TheTvDB

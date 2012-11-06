@@ -1,33 +1,28 @@
-module TheTvDB
-  class Response::Unzip < Response
-    dependency 'zip/zip'
-    
-    define_parser do |body|
-      ::Zip::ZipFile.new body
-    end
+require 'zip/zip'
 
-    def parse(body)
-      case body
-      when String
-        zip = Tempfile.new('unzip_me')
-        begin
-           zip.write(body)
-           unzipped = self.class.parser.call(zip)
-           files = {}
-           unzipped.each do |file|
-             files[file.name] = file.get_input_stream.read
-           end
-        ensure
-           zip.close
-           zip.unlink
+module TheTvDB
+  class Response::Unzip < Faraday::Response::Middleware
+
+    def on_complete(env)
+      env[:body] = unzip(env[:body]) if env[:response_headers]["content-type"] == "application/zip"      
+      super
+    end
+    
+    def unzip(body)
+      zipped = Tempfile.new('thetvdb.com')
+      begin
+        zipped.write(body.force_encoding("utf-8"))
+        unzipped = ::Zip::ZipFile.new(zipped)
+        files = {}
+        unzipped.each do |file|
+          files[file.name] = file.get_input_stream.read
         end
         files
-      else
-        body
+      ensure
+        zipped.close
+        zipped.unlink
       end
-    rescue
-      body
     end
-    
+
   end # Response::Unzip
 end # TheTvDB

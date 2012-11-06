@@ -44,8 +44,9 @@ describe TheTvDB::Series do
     
     context "when api key is provided" do
       before(:all) do
+        body = TheTvDB::Response::Unzip.new.unzip(fixture("series/en.zip"))
         stub_get("ASDF01234F0AF1368/series/82066/all/en.zip").
-          to_return(:status => 200, :body => fixture("series/en.zip"))
+          to_return(:status => 200, :body => body)
         api = TheTvDB.new(:api_key => "ASDF01234F0AF1368")
         @series = api.series.find("82066")
       end
