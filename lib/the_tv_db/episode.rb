@@ -77,5 +77,5 @@ module TheTvDB
     
     attr_accessor *ATTRS_MAP.keys
     
-  end # Series
+  end # Episode
 end # TheTvDB

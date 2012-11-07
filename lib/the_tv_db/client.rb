@@ -13,5 +13,5 @@ module TheTvDB
       Episode
     end
     
-  end # API
+  end # Client
 end # TheTvDB
