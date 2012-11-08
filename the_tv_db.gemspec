@@ -23,5 +23,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency "rubyzip",   "~> 0.9.9"
   
   gem.add_development_dependency "rspec", "~> 2.11.0"
-  gem.add_development_dependency "webmock", "~> 1.8.11"
+  gem.add_development_dependency "webmock", "~> 1.9.0"
 end
