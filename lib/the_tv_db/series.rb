@@ -1,42 +1,6 @@
 module TheTvDB
   class Series < API
     include Model
-
-    class << self
-      def search(name, lang="en")
-        data = request("GetSeries.php", { seriesname: name, language: lang })["Data"]
-        return [] if data.nil?
-        
-        series = data["Series"]
-        
-        case series
-        when Hash
-          [ Series::Collection.new(series) ]
-        when Array
-          series.collect { |serie| Series::Collection.new(serie) }
-        else
-          []
-        end
-      end
-      
-      def find(id, lang="en")
-        if TheTvDB.api_key
-          files = request("#{TheTvDB.api_key}/series/#{id}/all/#{lang}.zip")
-          data = files["#{lang}.xml"].fetch("Data")
-          record = new(data["Series"])
-          record.episodes = data["Episode"]
-          record.banners = files["banners.xml"]["Banners"]["Banner"]
-          record.actors = files["actors.xml"]["Actors"]["Actor"]
-        else
-          data = request("/data/series/#{id}/all/").fetch("Data")
-          record = new(data["Series"])
-          record.episodes = data["Episode"]
-        end
-        
-        return record
-      end
-      alias :get :find
-    end
     
     ATTRS_MAP = {
       :id               => "id",
@@ -67,6 +31,49 @@ module TheTvDB
     }.freeze
     
     attr_accessor *ATTRS_MAP.keys, :episodes, :banners, :actors
+
+    class << self
+      def search(name, lang="en")
+        data = request("GetSeries.php", { seriesname: name, language: lang })["Data"]
+        return [] if data.nil?
+        
+        series = data["Series"]
+        
+        case series
+        when Hash
+          [ Series::Collection.new(series) ]
+        when Array
+          series.collect { |serie| Series::Collection.new(serie) }
+        else
+          []
+        end
+      end
+      
+      def find(id, lang="en")
+        format = TheTvDB.api_key ? :zip : :xml
+        send("get_#{format}_by_id", id, lang)
+      end
+      alias :get :find
+      
+      private
+      
+      def get_xml_by_id(id, lang)
+        data = request("/data/series/#{id}/all/").fetch("Data")
+        record = new(data["Series"]) do |r|
+          r.episodes = data["Episode"]
+        end
+      end
+      
+      def get_zip_by_id(id, lang)
+        files = request("#{TheTvDB.api_key}/series/#{id}/all/#{lang}.zip")
+        data = files["#{lang}.xml"].fetch("Data")
+        record = new(data["Series"]) do |r|
+          r.episodes = data["Episode"]
+          r.banners  = files["banners.xml"]["Banners"]["Banner"]
+          r.actors   = files["actors.xml"]["Actors"]["Actor"]
+        end
+      end
+    end
     
     def episodes=(episodes)
       @episodes = case episodes

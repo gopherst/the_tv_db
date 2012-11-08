@@ -3,9 +3,11 @@ module TheTvDB
     
     attr_accessor :klass
     
-    def initialize(params=nil)
+    def initialize(params=nil, &block)
       @klass = self.class
       self.attributes = params
+      
+      self.instance_eval(&block) if block_given?
     end
     
     def attributes=(params=nil)
