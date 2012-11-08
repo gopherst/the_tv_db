@@ -4,6 +4,7 @@ describe TheTvDB::Series do
   let(:api) { TheTvDB.new }
     
   context ".search" do
+    
     it "returns an empty array when no results" do
       stub_get("GetSeries.php?language=en&seriesname=asdf").
         to_return(:status => 200, :body => fixture("series/empty.xml"))
@@ -43,10 +44,12 @@ describe TheTvDB::Series do
     end
     
     context "when api key is provided" do
-      before(:all) do
-        body = TheTvDB::Response::Unzip.new.unzip(fixture("series/en.zip"))
+      before :all do
         stub_get("ASDF01234F0AF1368/series/82066/all/en.zip").
-          to_return(:status => 200, :body => body)
+          to_return(:status => 200, 
+                    :body => fixture("series/en.zip"), 
+                    :headers => { "content-type" => "application/zip" })
+
         api = TheTvDB.new(:api_key => "ASDF01234F0AF1368")
         @series = api.series.find("82066")
       end

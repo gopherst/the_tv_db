@@ -13,7 +13,7 @@ module TheTvDB
     def attributes=(params=nil)
       params.each do |attr, value|
         begin
-          self.public_send("#{klass::ATTRS_MAP.key(attr)}=", value)
+          self.public_send("#{attributes_map.key(attr)}=", value)
         rescue NoMethodError
           raise UnknownAttributeError, "unknown attribute: #{attr}"
         end
@@ -22,7 +22,7 @@ module TheTvDB
     
     def attributes
       attrs = {}
-      klass::ATTRS_MAP.keys.each do |name|
+      class_attributes.each do |name|
         attrs[name] = send(name)
       end
       attrs
@@ -30,7 +30,7 @@ module TheTvDB
     
     def inspect
       inspection = unless id.nil?
-        klass::ATTRS_MAP.keys.collect { |name|
+        class_attributes.collect { |name|
           "#{name}: #{attribute_for_inspect(name)}"
         }.compact.join(", ")
        else
@@ -49,6 +49,14 @@ module TheTvDB
       else
         value.inspect
       end
+    end
+    
+    def attributes_map
+      klass::ATTRS_MAP
+    end
+    
+    def class_attributes
+      attributes_map.keys
     end
     
   end # Model
