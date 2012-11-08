@@ -1,4 +1,4 @@
-# TheTvDB [![Build Status](https://travis-ci.org/jassa/the_tv_db.png)](https://travis-ci.org/jassa/the_tv_db) [![Dependency Status](https://gemnasium.com/jassa/the_tv_db.png)](https://gemnasium.com/jassa/the_tv_db)
+# TheTvDB [![Build Status](https://travis-ci.org/jassa/the_tv_db.png)](https://travis-ci.org/jassa/the_tv_db) [![Dependency Status](https://gemnasium.com/jassa/the_tv_db.png)](https://gemnasium.com/jassa/the_tv_db) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/jassa/the_tv_db)
 
 Ruby API Client for TheTvDB.com
 
