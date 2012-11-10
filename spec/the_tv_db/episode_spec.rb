@@ -13,11 +13,11 @@ describe TheTvDB::Episode do
       let(:episodes) { api.episodes.find("82066", "2012-11-16") }
       
       it "returns an array" do
-        episodes == Array
+        episodes.class.should == Array
       end
       
       it "instantiates episode objects" do
-        episodes.first == TheTvDB::Episode
+        episodes.first.class.should == TheTvDB::Episode
       end
     end
     
