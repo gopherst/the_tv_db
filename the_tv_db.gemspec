@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   
   gem.add_dependency "faraday",   "~> 0.8.4"
-  gem.add_dependency "ox",        "~> 1.6.6"
+  gem.add_dependency "ox",        "~> 1.7.0"
   gem.add_dependency "multi_xml", "~> 0.5.1"
   gem.add_dependency "rubyzip",   "~> 0.9.9"
   
