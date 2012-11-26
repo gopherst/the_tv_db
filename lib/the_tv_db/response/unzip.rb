@@ -3,7 +3,7 @@ module TheTvDB
 
     def on_complete(env)
       if env[:response_headers]["content-type"] == "application/zip"
-        env[:body] = TheTvDB::Zip.inflate(env[:body])
+        env[:body] = TheTvDB::Zip.new.inflate(env[:body])
       end
       
       super

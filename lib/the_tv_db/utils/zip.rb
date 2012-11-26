@@ -1,35 +1,31 @@
 require 'zip/zip'
 
 module TheTvDB
-  module Zip
+  class Zip
     
-    class << self
+    attr_accessor :tmp
     
-      # Decompresses string.
-      def inflate(string)
-        entries = {}
-        deflated = deflate(string)
-        deflated.each do |entry|
-          entries[entry.name] = entry.get_input_stream.read
-        end
-        entries
-      ensure
-        tmp.close
-        tmp.unlink
+    def initialize
+      @tmp = Tempfile.new('thetvdb.com')
+    end
+    
+    # Decompresses string.
+    def inflate(string)
+      entries = {}
+      deflated = deflate(string)
+      deflated.each do |entry|
+        entries[entry.name] = entry.get_input_stream.read
       end
-      
-      # Compresses the given string.
-      def deflate(string)
-        tmp.write(string.force_encoding("utf-8"))
-        ::Zip::ZipFile.new(tmp)
-      end
- 
-      private
-
-      def tmp
-        @tmp ||= Tempfile.new('thetvdb.com')
-      end
-  
+      entries
+    ensure
+      tmp.close
+      tmp.unlink
+    end
+    
+    # Compresses the given string.
+    def deflate(string)
+      tmp.write(string.force_encoding("utf-8"))
+      ::Zip::ZipFile.new(tmp)
     end
 
   end # Zip
