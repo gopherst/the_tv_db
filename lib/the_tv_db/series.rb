@@ -72,6 +72,8 @@ module TheTvDB
           r.banners  = files["banners.xml"]["Banners"]["Banner"]
           r.actors   = files["actors.xml"]["Actors"]["Actor"]
         end
+      rescue ::Zip::ZipError
+        get_xml_by_id(id, lang)
       end
     end
     
