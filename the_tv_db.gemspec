@@ -21,6 +21,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency "multi_xml", "~> 0.5.1"
   gem.add_dependency "rubyzip",   "~> 0.9.9"
 
-  gem.add_development_dependency "rspec", "~> 2.12.0"
-  gem.add_development_dependency "webmock", "~> 1.9.0"
+  gem.add_development_dependency "rspec", "~> 2.13.0"
+  gem.add_development_dependency "webmock", "~> 1.10.0"
 end
