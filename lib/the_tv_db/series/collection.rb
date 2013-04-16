@@ -5,11 +5,12 @@ module TheTvDB
     ATTRS_MAP = {
       :id          => "seriesid",
       :api_id      => "id",
+      :alias       => "AliasNames",
       :banner      => "banner",
       :first_aired => "FirstAired",
       :imdb_id     => "IMDB_ID",
       :name        => "SeriesName",
-      :alias       => "AliasNames",
+      :network     => "Network",
       :language    => "language",
       :overview    => "Overview",
       :zap2it_id   => "zap2it_id"
