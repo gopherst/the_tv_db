@@ -1,7 +1,7 @@
 module TheTvDB
   class Series::Collection
     include Model
-    
+
     ATTRS_MAP = {
       :id          => "seriesid",
       :api_id      => "id",
@@ -9,6 +9,7 @@ module TheTvDB
       :first_aired => "FirstAired",
       :imdb_id     => "IMDB_ID",
       :name        => "SeriesName",
+      :alias       => "AliasNames",
       :language    => "language",
       :overview    => "Overview",
       :zap2it_id   => "zap2it_id"
