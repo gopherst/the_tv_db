@@ -1,7 +1,7 @@
 module TheTvDB
   class Series < API
     include Model
-    
+
     ATTRS_MAP = {
       :id               => "id",
       :actors           => "Actors",
@@ -29,16 +29,16 @@ module TheTvDB
       :status           => "Status",
       :zap2it_id        => "zap2it_id"
     }.freeze
-    
+
     attr_accessor *ATTRS_MAP.keys, :episodes, :banners, :actors
 
     class << self
       def search(name, lang="en")
         data = request("GetSeries.php", { seriesname: name, language: lang })["Data"]
         return [] if data.nil?
-        
+
         series = data["Series"]
-        
+
         case series
         when Hash
           [ Series::Collection.new(series) ]
@@ -48,22 +48,22 @@ module TheTvDB
           []
         end
       end
-      
+
       def find(id, lang="en")
         format = TheTvDB.api_key ? :zip : :xml
         send("get_#{format}_by_id", id, lang)
       end
       alias :get :find
-      
+
       private
-      
+
       def get_xml_by_id(id, lang)
         data = request("/data/series/#{id}/all/").fetch("Data")
         record = new(data["Series"]) do |r|
           r.episodes = data["Episode"]
         end
       end
-      
+
       def get_zip_by_id(id, lang)
         files = request("#{TheTvDB.api_key}/series/#{id}/all/#{lang}.zip")
         data = files["#{lang}.xml"].fetch("Data")
@@ -76,7 +76,7 @@ module TheTvDB
         get_xml_by_id(id, lang)
       end
     end
-    
+
     def episodes=(episodes)
       @episodes = case episodes
       when Hash
@@ -87,6 +87,6 @@ module TheTvDB
         []
       end
     end
-    
+
   end # Series
 end # TheTvDB
