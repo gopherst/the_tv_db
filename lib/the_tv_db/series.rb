@@ -69,8 +69,8 @@ module TheTvDB
         data = files["#{lang}.xml"].fetch("Data")
         record = new(data["Series"]) do |r|
           r.episodes = data["Episode"]
-          r.banners  = files["banners.xml"]["Banners"]["Banner"]
-          r.actors   = files["actors.xml"]["Actors"]["Actor"]
+          r.build_banners_from_xml(files["banners.xml"])
+          r.build_actors_from_xml(files["actors.xml"])
         end
       rescue ::Zip::ZipError
         get_xml_by_id(id, lang)
@@ -86,6 +86,25 @@ module TheTvDB
       else
         []
       end
+    end
+
+    def build_banners_from_xml(doc)
+      build_association_from_xml(:banners, doc)
+    end
+
+    def build_actors_from_xml(doc)
+      build_association_from_xml(:actors, doc)
+    end
+
+    def build_association_from_xml(association_name, doc)
+      name_for_collection = association_name.to_s.capitalize
+      name_for_element = name_for_collection[0..-2]
+
+      elements = if doc && doc[name_for_collection]
+        doc[name_for_collection][name_for_element]
+      end
+
+      self.send("#{association_name}=", elements)
     end
 
   end # Series
