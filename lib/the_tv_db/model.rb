@@ -1,25 +1,26 @@
 module TheTvDB
   module Model
-    
-    attr_accessor :klass
-    
+
+    attr_accessor :klass, :extras
+
     def initialize(params=nil, &block)
       @klass = self.class
+      @extras = {}
       self.attributes = params
-      
+
       self.instance_eval(&block) if block_given?
     end
-    
+
     def attributes=(params=nil)
       params.each do |attr, value|
         begin
           self.public_send("#{attributes_map.key(attr)}=", value)
         rescue NoMethodError
-          raise UnknownAttributeError, "unknown attribute: #{attr}"
+          extras[attr] = value
         end
       end if params
     end
-    
+
     def attributes
       attrs = {}
       class_attributes.each do |name|
@@ -27,7 +28,7 @@ module TheTvDB
       end
       attrs
     end
-    
+
     def inspect
       inspection = unless id.nil?
         class_attributes.collect { |name|
@@ -38,7 +39,7 @@ module TheTvDB
        end
       "#<#{self.class} #{inspection}>"
     end
-    
+
     def attribute_for_inspect(attr_name)
       value = send(attr_name)
 
@@ -50,14 +51,14 @@ module TheTvDB
         value.inspect
       end
     end
-    
+
     def attributes_map
       klass::ATTRS_MAP
     end
-    
+
     def class_attributes
       attributes_map.keys
     end
-    
+
   end # Model
 end # TheTvDB

@@ -4,7 +4,6 @@ describe TheTvDB::Series do
   let(:api) { TheTvDB.new }
 
   context ".search" do
-
     it "returns an empty array when no results" do
       stub_get("GetSeries.php?language=en&seriesname=asdf").
         to_return(:status => 200, :body => fixture("series/empty.xml"))
@@ -25,7 +24,6 @@ describe TheTvDB::Series do
   end
 
   context ".find" do
-
     context "when unauthenticated" do
       it "returns a series obejct" do
         stub_get("data/series/82066/all/", TheTvDB::SITE.to_s).
@@ -89,7 +87,6 @@ describe TheTvDB::Series do
         end
       end
     end
-
   end
 
 end

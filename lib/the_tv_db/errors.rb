@@ -11,8 +11,4 @@ module TheTvDB
   # Raised when the record was not found given an id or set of ids.
   class RecordNotFound < StandardError
   end
-
-  # Raised when unknown attributes are supplied via mass assignment.
-  class UnknownAttributeError < NoMethodError
-  end
 end
